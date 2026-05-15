@@ -24,3 +24,4 @@ function rovescia(){
         pCount.style.display="none";
     }
 }
+//per creare una posizione casusale posso usare la classe di bootstrap position con cui posso modificare la x e la y
