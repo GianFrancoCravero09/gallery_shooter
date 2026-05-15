@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js" defer></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+    <title>Gallery Shooter</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark p-4 fs-3  justify-content-between">
+            <div class="text-primary fw-bold"> Gallery Shooter⭐ <span class="fw-normal text-white fs-5">- Sei pronto a sfidare gli alieni per difendere la terra?</span> 
+            </div>
+            <ul class="navbar-nav flex-row gap-3">
+                    <li class="nav-item">
+                <!-- Corretto: aggiunto # nel target -->
+                    <a class="nav-link fs-6" href="#" data-bs-toggle="modal" data-bs-target="#comeGiocare">
+                        Come giocare
+                    </a>
+                </li>
+                <li class="nav-item">
+                <!-- Corretto: aggiunto # nel target -->
+                    <a class="nav-link fs-6" href="#" data-bs-toggle="modal" data-bs-target="#finePartita">
+                        Quando finisce il gioco
+                    </a>
+                </li>
+            </ul>
+        
+
+            <div class="modal fade" id="comeGiocare" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header fs-5">
+                            <h5 class="modal-title" id="exampleModalLabel">REGOLE DEL GIOCO</h5>
+                            <!-- Bottone per chiudere (X) -->
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body fs-6">
+                            Dopo aver premuto il pulsante "START", inizieranno a comparirti dei piccoli alieni in posizione casuale nello schermo.
+                            Il tuo obbiettivo è quello di prenderne il più possibile, se però li manchi o prendi un'austronauta perdi punti.
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Chiudi</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="finePartita" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header fs-5">
+                            <h5 class="modal-title" id="exampleModalLabel">COME FINISCE LA PARTIA</h5>
+                            <!-- Bottone per chiudere (X) -->
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body fs-6">
+                            La partita finisce automaticamente dopo 2 minuti e per vincere devi prendere almeno 10 alieni.
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-bs-dismiss="modal">Chiudi</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container d-flex justify-content-center  pt-3" id="cont">
+        <button id="btnStart" class="btn btn-outline-primary btn-lg" onclick="inizioGioco()">START</button>
+        
+    </div>
+</body>
+</html>
